@@ -1,30 +1,20 @@
 const DataController = (function () {
   const data = {
     texts: [
-      // {
-      //   id: 0,
-      //   text: "Bakiyosun oyle yine magrur, bi kere de gul ya ellerimi doldur benim gozlerime kasvet hayalim olma iteleme nolur canim acisada gitmem, yeniden doluyorum kolaya bitmem geri kalamiyo hasret, dayandım olmaz, bi yere gitme zor gelir gecer, oldugu kadar yok edip gider, doldugu kadar zor gelir gecer oldugu kadar yok edip gider, doldugu kadar",
-      //   highScore: 60,
-      // },
-      // {
-      //   id: 1,
-      //   text: "Merhaba gencler benim adim boyan gorsen tanirsin senin aminakoyan dalga gecme artislik cekme cunku ben psikopatim yanima gelme kusura bakma ama bu gercek hayat",
-      //   highScore: 60,
-      // },
       {
         id: 2,
         text: "hassanoguzkara2009",
         highScore: 74,
       },
       {
-        id: 3,
-        text: "abe kaynana naptin bizeee",
-        highScore: 65,
+        id: 2,
+        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, praesentium eius illo omnis reiciendis suscipit dolore tempore possimus neque cum!",
+        highScore: 74,
       },
       {
-        id: 3,
-        text: "massallah size massallah kirk bin kere de size massallah nazarda deymez insallah anasinin guzeline massallah",
-        highScore: 65,
+        id: 2,
+        text: "hassanoguzkara2009",
+        highScore: 74,
       },
     ],
     indexOfText: 0,
