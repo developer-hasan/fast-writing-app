@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Speed typing game</title>
+  </head>
+  <body>
+    <div class="app-bar">
+        <h2>Hizli yazma uygulamasi</h2>
+      </div>
+    <div class="app">
+      <div class="game">
+        <div class="left">
+          <div class="press-indicator"></div>
+          <div class="text-container"></div>
+          <button class="start">Start</button>
+          <!-- <div class="score">your score is 300</div> -->
+          <div class="modal-overlay"></div>
+          <div class="status-modal">
+            <h2>Status</h2>
+            <table class="status">
+                <td>Score</td>
+                <td id="score">0</td>
+              </tr>
+              <tr>
+                <td>Elapsed time</td>
+                <td id="elapsed-time">1.2 min</td>
+              </tr>
+              <tr>
+                <td>Wrong press</td>
+                <td id="false-presses">2</td>
+              </tr>
+              <tr>
+                <td>High score</td>
+                <td id="high-score">75</td>
+              </tr>
+            </table>
+            <button class="btn-close-modal">Close</button>
+          </div>
+        </div>
+        <div class="right">
+          <div class="score-bar">
+            <div class="background"></div>
+          </div>
+          <div class="false-pressed-text">
+            <div>W</div>
+            <div>R</div>
+            <div>O</div>
+            <div>N</div>
+            <div>G</div>
+            <br>
+            <div>K</div>
+            <div>E</div>
+            <div>Y</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
