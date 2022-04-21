@@ -184,6 +184,10 @@ font-family: 'Questrial', sans-serif;
   border-bottom: 5px solid var(--red);
   border-radius: 3rem;
   transition: background-color 200ms ease-in-out;
+  animation-name: move-up-down;
+  animation-duration: 1300ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
 }
 
 .game .left button:hover {
@@ -306,5 +310,20 @@ span.wave {
   100% {
     width: 100px;
     height: 100px;
+  }
+}
+
+@keyframes move-up-down {
+  0% {
+    transform: translateY(0);
+    border-color: #8ce670;
+  }
+  50% {
+    transform: translateY(-2px);
+    border-color: #6aec42;
+  }
+  100% {
+    transform: translateY(0);
+    border-color: var(--red);
   }
 }

@@ -363,6 +363,8 @@ const AppController = (function (data, ui, audio) {
   window.addEventListener("keydown", (e) => {
     if (data.isGameStarted()) {
       const currentChar = data.getCurrentText().text[data.getCharIndex()];
+      console.log({ currentChar });
+      console.log(data.getCharIndex());
       if (e.key === currentChar) {
         move();
         ui.successBackground();
