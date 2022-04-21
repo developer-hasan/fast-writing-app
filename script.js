@@ -226,10 +226,10 @@ const AudioController = (function () {
     //   "/audio/success3.wav",
     //   "/audio/success4.wav",
     // ],
-    success: "/audio/success4.wav",
-    danger: "/audio/danger.mp3",
-    finished: "/audio/finished2.wav",
-    highScore: "/audio/highscore.wav",
+    success: "https://oguz-kara.github.io/typing-game/audio/success4.wav",
+    danger: "https://oguz-kara.github.io/typing-game/audio/danger.mp3",
+    finished: "https://oguz-kara.github.io/typing-game/audio/finished2.wav",
+    highScore: "https://oguz-kara.github.io/typing-game/audio/highscore.wav",
   };
 
   return {
