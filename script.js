@@ -3,18 +3,18 @@ const DataController = (function () {
     texts: [
       {
         id: 2,
-        text: "hassanoguzkara2009",
+        text: "start with a easy one...",
+        highScore: 45,
+      },
+      {
+        id: 3,
+        text: "hello world this is the worlds most fun typing game!",
         highScore: 74,
       },
       {
-        id: 2,
-        text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, praesentium eius illo omnis reiciendis suscipit dolore tempore possimus neque cum!",
-        highScore: 74,
-      },
-      {
-        id: 2,
-        text: "hassanoguzkara2009",
-        highScore: 74,
+        id: 4,
+        text: "this is a hard one Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quia necessitatibus exercitationem possimus voluptates obcaecati perferendis expedita? Minima, distinctio commodi exercitationem ab, provident facilis aspernatur veniam omnis maiores dolor laborum.",
+        highScore: 80,
       },
     ],
     indexOfText: 0,
@@ -255,8 +255,8 @@ const AppController = (function (data, ui, audio) {
   // FUNCTIONS
   const calculateElapsedTime = (milliseconds) => {
     const mins = milliseconds / 1000;
-    const text = mins < 2 ? " sn" : " sn'ler";
-    return mins.toFixed(4) + text;
+    const text = "s";
+    return mins.toFixed(0) + text;
   };
   const resetText = () => {
     ui.setChars(data.getCurrentText().text);
@@ -309,7 +309,7 @@ const AppController = (function (data, ui, audio) {
     if (data.isHighScore(score)) {
       data.setHighScoreOfText(data.getCurrentText(), score);
       console.log(data.getTexts());
-      textScore = `${score} <span class="green">(en yuksek skor)</span>`;
+      textScore = `${score} <span class="green">(high scor)</span>`;
       audio.newHighScore();
     } else {
       audio.textFinished();
